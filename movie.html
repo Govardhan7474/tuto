@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1><i>Shop Time</i></h1>
+    <h2><i>One Shop for all your needs</i></h2>
+    </center>
+    <script bgcolor="lightsky">
+        n=window.prompt("Enter a Number");
+        if(n<=2)
+        {
+            tcost=n*150;
+            document.write("For n tickets you need to pay:",tcost);
+        }
+        else if(n>=6)
+        {
+            document.write("Booking are not allowed");
+        }
+        else
+        {
+            if(n==3)
+            {
+                t1=150-(150*(3/100));
+                t2=150-(150*(5/100));
+                t3=150-(150*(7/100));
+                tcost=t1+t2+t3;
+                document.write("For 3 tickets you need to pay ", tcost," instead of:",(150*3)," With discount");
+            }
+            else if(n==4)
+            {
+                t1=150-(150*(3/100));
+                t2=150-(150*(5/100));
+                t3=150-(150*(7/100));
+                t4=150-(150*(9/100));
+                tcost=t1+t2+t3+t4;
+                document.write("For 4 tickets you need to pay :",tcost,"instead of:",(150*4),"With discount");
+            }
+            else 
+            {
+                t1=150-(150*(3/100));
+                t2=150-(150*(5/100));
+                t3=150-(150*(7/100));
+                t4=150-(150*(9/100));
+                t5=150-(150*(11/100));
+                tcost=t1+t2+t3+t4+t5;
+                document.write("For 5 tickets you need to pay :",tcost,"instead of:",(150*5),"With discount");
+            }
+        }
+
+</script>
+</body>
+</html>
