@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Classes & Inheritance</title>
+    <script>
+        class Person
+        {
+            constructor(name,age)
+            {
+                this.name=name;
+                this.age=age;
+            }
+            det()
+            {
+                return "Name:"+this.name+"<br>"+"<br>"+"Age:"+this.age;
+            }
+        }
+        class Employee extends Person
+        {
+            constructor(name,age,role,contact)
+            {
+                super(name,age);
+                this.role=role;
+                this.contact=contact
+            }
+            getDetails()
+            {
+                return this.det()+"<br>"+"<br>"+"Role:"+this.role+"<br>"+"<br>"+"Contact: "+this.contact;
+            }
+        }
+        function fun()
+        {
+            let v=new Employee("Johnny Sins",24,"Pornist","9988774455");
+            document.getElementById("id1").innerHTML=v.getDetails();
+        }
+    </script>
+</head>
+<body bgcolor="cyan">
+    <h1 style="background-color:rgb(223,56,56)"></h1>
+    <h3>Click here to get details</h3>
+    <p id="id1"></p>
+    <input type="button" value="view details" onclick="fun()">
+</body>
+</html>
